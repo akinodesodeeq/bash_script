@@ -2,7 +2,7 @@
 
 # Thanks for coming to check this code 
 
-function get_score {
+
 
 echo " we are about to do simple arithmetic with bash script "
 
@@ -17,15 +17,10 @@ then
 break
 
 else 
-	add=$(($sum+$value))
+add=$(($sum+$value))
+echo " $add "
 
-	return $add
+	
 
 fi
 done
-}
-
-get_score
-
-result=$?
-echo " $result "
